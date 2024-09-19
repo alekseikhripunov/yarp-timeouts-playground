@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yarp.Timeouts.Playground.Web", "src\Yarp.Timeouts.Playground.Web\Yarp.Timeouts.Playground.Web.csproj", "{36BCD79A-C643-47B3-AD3D-CC1A005205FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yarp.Timeouts.Playground.Tests", "test\Yarp.Timeouts.Playground.Tests\Yarp.Timeouts.Playground.Tests.csproj", "{B1732FB2-41F4-4661-BF4F-9DF39D72A8D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36BCD79A-C643-47B3-AD3D-CC1A005205FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36BCD79A-C643-47B3-AD3D-CC1A005205FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36BCD79A-C643-47B3-AD3D-CC1A005205FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36BCD79A-C643-47B3-AD3D-CC1A005205FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1732FB2-41F4-4661-BF4F-9DF39D72A8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1732FB2-41F4-4661-BF4F-9DF39D72A8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1732FB2-41F4-4661-BF4F-9DF39D72A8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1732FB2-41F4-4661-BF4F-9DF39D72A8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {607D883D-DA59-404C-9424-868FFCC19940}
+	EndGlobalSection
+EndGlobal
