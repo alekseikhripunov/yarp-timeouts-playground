@@ -20,7 +20,7 @@ namespace Yarp.Timeouts.Playground.Tests
     ///     </item>
     /// </list>
     /// </summary>
-    public class TimeoutsTests : IClassFixture<IntegrationFixture>, IDisposable
+    public sealed class TimeoutsTests : IClassFixture<IntegrationFixture>, IDisposable
     {
         private readonly IntegrationFixture _fixture;
 
@@ -67,10 +67,10 @@ namespace Yarp.Timeouts.Playground.Tests
         }
 
         /// <summary>
-        /// Test checking that reverse proxy returns <c>504 GatewayTimeout</c> when timeout is configured on a cluster.
+        /// Test checking that reverse proxy returns <see cref="HttpStatusCode.GatewayTimeout"/> when timeout is configured on a cluster.
         /// </summary>
         [Fact]
-        public async Task TimeoutIsConfiguredPerCluster_ReturnsGatewayTimeout()
+        public async Task TimeoutIsConfiguredOnCluster_ReturnsGatewayTimeout()
         {
             // Arrange
             _fixture.MockServer
@@ -98,11 +98,11 @@ namespace Yarp.Timeouts.Playground.Tests
         }
 
         /// <summary>
-        /// Tect clarifying if reverse proxy should return <c>504 GatewayTimeout</c> or <c>400 BadRequest</c> when
-        /// timeout is configured on a route.
+        /// Tect clarifying if reverse proxy should return <see cref="HttpStatusCode.GatewayTimeout"/> or <see cref="HttpStatusCode.BadRequest"/>
+        /// when timeout is configured on a route.
         /// </summary>
         [Fact]
-        public async Task TimeoutIsConfiguredPerRoute_ShouldReturnGatewayTimeoutOrBadRequest()
+        public async Task TimeoutIsConfiguredOnRoute_ShouldReturnGatewayTimeoutOrBadRequest()
         {
             // Arrange
             _fixture.MockServer
